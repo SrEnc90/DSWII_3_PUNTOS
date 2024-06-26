@@ -7,8 +7,6 @@ import org.bson.types.ObjectId;
 import com.example.examen.entity.Libro;
 
 public interface LibroService {
-    
-    
     //CRUD 
     public abstract List<Libro> listaPorTitulo(String titulo);
     public abstract Libro agregarActualizarLibro(Libro libro);
@@ -17,5 +15,5 @@ public interface LibroService {
     
     //Consulta usando $in 
     public abstract List<Libro> listaPorAutores(List<String> authors);
-     
+    public abstract List<Libro> listaPorCategorias(List<String> categories);
 }
