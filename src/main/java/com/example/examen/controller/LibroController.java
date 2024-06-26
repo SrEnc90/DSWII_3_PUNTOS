@@ -108,6 +108,7 @@ public class LibroController {
         return service.listaPorAutores(authors);
 	}
 
+	// http://localhost:8092/rest/libro/listaLibroPorCategorias?categories=Java&categories=Mobile
 	@GetMapping("/listaLibroPorCategorias")
 	@ResponseBody
 	public List<Libro> listaPorCategorias(@RequestParam("categories") List<String> categories) {
